@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project2.css">
+    <title>Currency Converter</title>
+    
+
+</head>
+<body>
+  
+        <svg id="sky-svg">
+          <defs>
+           
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3" result="blurred" />
+              <feMerge>
+                <feMergeNode in="blurred" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+      
+      
+       
+ 
+        
+      </body>
+      </html>
+    <div class="glow-box">
+    <h1>แปลงสกุลเงิน</h1>
+    <p>กรอกจำนวนเงินและเลือกสกุลเงินที่จะแปลง</p>
+    <form id="converterForm">
+        <label for="amount">จำนวน</label>
+        <input type="number" id="amount" placeholder="ใส่จำนวน" required>
+        <br>
+        <label for="fromCurrency">จาก</label>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="THB">THB</option>
+            
+        </select>
+        
+        <label for="toCurrency">เป็น</label>
+        <select id="toCurrency">
+            
+            <option value="THB">THB</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <br>
+        
+    </form>
+    <type="button" onclick="convertCurrency()"><a href="#" class="btn">Cick me</a></button>
+</form>
+<div class="result" id="result"></div>
+
+<script src="project2.js"></script>
+</body>
+<body>
+  
+    <a href="project1.html"><span>project1</span></a> 
+   
+    </div>
+</body>
+</html>
+
